@@ -1,9 +1,10 @@
 from django.contrib import admin
+from django.contrib.auth.models import Group
 from .models import Header
 
 
 class HeaderAdmin(admin.ModelAdmin):
-  site_header = 'Header Information'
+  
   list_display = (
     'name',
     'image'
@@ -23,3 +24,7 @@ class HeaderAdmin(admin.ModelAdmin):
   
   
 admin.site.register(Header, HeaderAdmin)
+
+# Unregistering user groups as they are not required
+admin.site.unregister(Group)
+

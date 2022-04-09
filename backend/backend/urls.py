@@ -16,3 +16,8 @@ urlpatterns = [
 
 # adding static and media urls paths
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )
+
+# Changing Admin Panel Headings And Site Title:
+admin.site.site_header = 'Tic Tac Toe'
+admin.site.site_title = 'Tic Tac Toe Admin'
+admin.site.index_title = 'Tic Tac Toe Admin'
