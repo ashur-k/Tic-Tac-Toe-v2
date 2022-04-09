@@ -3,5 +3,5 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    path('', views.getTicTacToe, name='routes')
+    path('header/', views.getTicTacToe, name='routes')
 ]
