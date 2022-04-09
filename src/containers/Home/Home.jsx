@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import Message from '../../components/Message/Message';
+import Loader from '../../components/Loader/Loader';
 import PlayInstruction from '../../components/PlayInstructions/PlayInstructions';
 import SocialMedia from '../../components/SocialMedia/SocialMedia';
 import { listHome } from '../../actions/homeActions'
@@ -13,8 +15,6 @@ const Board = () => {
     const homeList = useSelector(state => state.homeList)
     const {error, loading, home} = homeList
 
-    // Setting array useState hook for loading with backend data 
-    const [header, setHeader] = useState([])
 
     useEffect (() => {
         dispatch(listHome())
@@ -25,8 +25,8 @@ const Board = () => {
 
     return ( 
         <div>
-            {loading ? <h2>loading...</h2>
-            : error ? <h3 style={{'color':'white', 'margin':'20px'}}>{error}</h3>
+            {loading ? <Loader />
+            : error ? <Message variant='danger'>{error}</Message>
             :
             <div>
                 <Header header_data = {home}/ >
