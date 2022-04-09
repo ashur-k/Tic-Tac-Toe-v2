@@ -7,5 +7,3 @@ const AiBoard = (props) => {
 }
 
 export default AiBoard
- 
-
