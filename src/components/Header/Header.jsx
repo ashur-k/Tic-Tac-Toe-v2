@@ -4,10 +4,16 @@ import logo from '../../assests/tic-tac-toe.png'
 import './Header.css'
 
 
-const Header = () => {
+const Header = ({ header_data }) => {
+  console.log(header_data)
   return (
     <div className="header section-padding" id="home">
       <div className="header-content">
+      {header_data.map((header) => (
+        <div>
+          {header.id}
+        </div>
+      ))}
         <h1 className="gradient-text">
           Let's Play Tic-Tac-Toe
         </h1>

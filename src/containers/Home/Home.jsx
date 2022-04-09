@@ -17,7 +17,6 @@ const Board = () => {
         // asynchroneous function to load data to useState header
         async function fetchProducts(){
             const { data } = await axios.get('http://127.0.0.1:8000/api/header/')
-            console.log(data)
             setHeader(data)
         }
         // function call
@@ -27,7 +26,7 @@ const Board = () => {
 
     return ( 
         <div>
-            <Header / >
+            <Header header_data = {header}/ >
             <SocialMedia / >
             <PlayInstruction / >
             <Footer / >
