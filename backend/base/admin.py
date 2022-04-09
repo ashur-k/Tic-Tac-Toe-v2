@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import GameInfo
+from .models import Header
 
 
-class GameInfoAdmin(admin.ModelAdmin):
+class HeaderAdmin(admin.ModelAdmin):
   site_header = 'Header Information'
   list_display = (
     'name',
@@ -22,4 +22,4 @@ class GameInfoAdmin(admin.ModelAdmin):
     return False
   
   
-admin.site.register(GameInfo, GameInfoAdmin)
+admin.site.register(Header, HeaderAdmin)

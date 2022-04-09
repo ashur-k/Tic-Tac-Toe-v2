@@ -1,9 +1,9 @@
 from django.db import models
 
-class GameInfo(models.Model):
+class Header(models.Model):
 
     class Meta:
-        verbose_name_plural = 'GameInfo'
+        verbose_name_plural = 'Header'
 
     name = models.CharField(max_length=254)
     description = models.TextField()
