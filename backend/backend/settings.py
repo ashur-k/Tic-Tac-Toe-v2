@@ -110,6 +110,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = '/images/'
+
+# Setting up image and static files folders
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+
+# Setting image load dirs
+MEDIA_ROOT = 'static/images'
+
+# Allowing all CORS / 
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 # Default primary key field type
