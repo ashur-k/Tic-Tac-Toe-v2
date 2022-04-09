@@ -109,18 +109,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-MEDIA_URL = '/images/'
+STATIC_URL = '/static/'
+# setting to look for images in public/images folder
+MEDIA_URL =  '/images/'
+
+# /static/media/tic-tac-toe.3c7dfd75166df1e6817b.png
 
 # Setting up image and static files folders
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static',
 ]
 
-# Setting image load dirs
-MEDIA_ROOT = 'static/images'
+# setting to upload images to public/images folder
+MEDIA_ROOT = BASE_DIR / '../public/images'
 
+# /static/media/tic-tac-toe.3c7dfd75166df1e6817b.png
 # Allowing all CORS / 
 
 CORS_ALLOW_ALL_ORIGINS = True

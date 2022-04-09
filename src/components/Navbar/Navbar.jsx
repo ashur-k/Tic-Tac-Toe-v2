@@ -3,7 +3,7 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 import './Navbar.css';
-import logo from '../../assests/tic-tac-toe.png'
+import logo from '../../assests/TicTAcToe-logo.jpg'
 
 const Navbar = () => {
 
