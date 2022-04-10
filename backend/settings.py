@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://fkblnzzkcujwos:b23d68e8f215214a0eb24ed80820808087d0b0ba0b0c6538889301a5ae4c37f1@ec2-52-18-116-67.eu-west-1.compute.amazonaws.com:5432/d33mbesnmc375f')
+    'default': dj_database_url.parse('postgres://zutqzbnfweexiw:fb2c8fe478fab5da62cac300448470ae97d934065382da65e35158689d472f87@ec2-63-35-156-160.eu-west-1.compute.amazonaws.com:5432/d9pt981iknsuen')
 }
 
 
