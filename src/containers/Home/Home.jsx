@@ -34,12 +34,7 @@ const Board = () => {
                 <PlayInstruction / >
                 <Footer / >
             </div>
-        }
-                    
-                    
-                
-              
-           
+            }
         </div>
             
     )

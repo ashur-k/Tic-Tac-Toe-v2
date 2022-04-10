@@ -1,4 +1,5 @@
 .gpt3__footer {
+    margin-top: 80px;
     color: white;
 
     display: flex;
@@ -7,6 +8,7 @@
     align-items: center;
 
     background: var(--color-footer);
+    margin-bottom: 50px;
 }
 
 .gpt3__footer-heading {
