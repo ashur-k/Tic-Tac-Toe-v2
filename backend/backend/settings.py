@@ -1,7 +1,6 @@
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+
 import os
 # To use postgress database URL
 import dj_database_url
@@ -9,15 +8,18 @@ import dj_database_url
 # To use environment variables
 from decouple import config
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
 
+
+SECRET_KEY='django-insecure-1wrs72$p+7-g*s=o(#%28nur0uoe1wyx-s2_ejfh2_=@j+jv5%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'tic-tac-toe-ashur.herokuapp.com']
 
@@ -84,7 +86,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(config('DATABASE_URL'))
+    'default': dj_database_url.parse('postgres://fkblnzzkcujwos:b23d68e8f215214a0eb24ed80820808087d0b0ba0b0c6538889301a5ae4c37f1@ec2-52-18-116-67.eu-west-1.compute.amazonaws.com:5432/d33mbesnmc375f')
 }
 
 
@@ -152,5 +154,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 print(BASE_DIR)
 
 # To check if we are in development Mode
-if os.getcwd() == '/app':
-    DEBUG = True
+# if os.getcwd() == '/app':
+#     DEBUG = False
