@@ -154,5 +154,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 print(BASE_DIR)
 
 # To check if we are in development Mode
-if os.getcwd() == '/app':
-    DEBUG = False
+# if os.getcwd() == '/app':
+#     DEBUG = False
