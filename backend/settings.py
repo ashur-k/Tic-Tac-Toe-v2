@@ -21,7 +21,7 @@ SECRET_KEY='django-insecure-1wrs72$p+7-g*s=o(#%28nur0uoe1wyx-s2_ejfh2_=@j+jv5%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'tic-tac-toe-ashur.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ashur-tic-tac-toe.herokuapp.com']
 
 
 # Application definition
@@ -154,5 +154,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 print(BASE_DIR)
 
 # To check if we are in development Mode
-# if os.getcwd() == '/app':
-#     DEBUG = False
+if os.getcwd() == '/app':
+    DEBUG = False
