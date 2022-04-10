@@ -138,7 +138,7 @@ STATICFILES_DIRS = [
 ]
 
 # setting to upload images to public/images folder
-MEDIA_ROOT = BASE_DIR / '../public/images'
+MEDIA_ROOT = BASE_DIR / 'frontend/public/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # /static/media/tic-tac-toe.3c7dfd75166df1e6817b.png
