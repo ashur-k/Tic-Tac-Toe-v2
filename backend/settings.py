@@ -21,7 +21,7 @@ SECRET_KEY='django-insecure-1wrs72$p+7-g*s=o(#%28nur0uoe1wyx-s2_ejfh2_=@j+jv5%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ashur-tic-tac-toe.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ash-tic-tac-toe.herokuapp.com']
 
 
 # Application definition
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://zutqzbnfweexiw:fb2c8fe478fab5da62cac300448470ae97d934065382da65e35158689d472f87@ec2-63-35-156-160.eu-west-1.compute.amazonaws.com:5432/d9pt981iknsuen')
+    'default': dj_database_url.parse('postgres://vqazerpeazjjlv:8bbc73769fbda48ea8920a8eaed636fd03a8d0399d8a452ca33ea5e74cf20b4a@ec2-3-230-122-20.compute-1.amazonaws.com:5432/d5mompg3loj9dt')
 }
 
 
