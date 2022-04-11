@@ -8,6 +8,12 @@ import dj_database_url
 # To use environment variables
 from decouple import config
 
+import cloudinary_storage
+
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
@@ -35,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'base.apps.BaseConfig',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'cloudinary_storage'
     
 ]
 
@@ -58,7 +65,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build')            
+            os.path.join(BASE_DIR, 'frontend/build')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -86,7 +93,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://dvukgjiejglwdk:54ca2c12cb629bcc8cf51e40a6e60ac962c91f58030d2094ed8e21ffd44fcd43@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/d9j096nthd6nkm')
+    'default': dj_database_url.parse('postgres://cskiftrswssqoc:58101c614fe194c1f1285b4d670595ff7af87ede73a2cab8f6f63fc34e4d52b2@ec2-52-214-23-110.eu-west-1.compute.amazonaws.com:5432/dffdk85cf34e28')
 }
 
 
@@ -125,23 +132,24 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-# setting to look for images in public/images folder
-MEDIA_URL =  '/images/'
-
-# /static/media/tic-tac-toe.3c7dfd75166df1e6817b.png
-
-# Setting up image and static files folders
+MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
     BASE_DIR / 'frontend/build/static'
 ]
 
-# setting to upload images to public/images folder
-MEDIA_ROOT = BASE_DIR / 'frontend/public/images'
+MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# /static/media/tic-tac-toe.3c7dfd75166df1e6817b.png
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'independent-me',
+    'API_KEY': '822931654934275',
+    'API_SECRET': 'rzl6ZJ9odCDoucnLSj-Bx2upUs0'
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    
 # Allowing all CORS / 
 
 CORS_ALLOW_ALL_ORIGINS = True

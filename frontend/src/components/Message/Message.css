@@ -1,4 +1,7 @@
 .error-message {
   margin-top: 20px;
-  
+  color: white;
+  background: #ec2d17;
+  font-size: 20px;
+  padding: 20px;
 }

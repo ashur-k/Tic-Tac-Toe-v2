@@ -21,8 +21,8 @@ const Navbar = () => {
           <p><Link to='/'>Home</Link></p>
           <p><Link to='/two-players-game'>Two Players Game</Link></p>
           <p><Link to='/ai-mode'>Against Computer</Link></p>
-          <p><a href='/about-me'>About me</a></p>
-          <p><a href='/contact-me'>Contact me</a></p>
+          <p><Link to='/about-me'>About me</Link></p>
+          <p><Link to='/contact-me'>Contact me</Link></p>
         </div>
       </div>
       <div className="navbar-menu">
@@ -38,8 +38,8 @@ const Navbar = () => {
                 <p><Link to='/'>Home</Link></p>
                 <p><Link to='/two-players-game'>Two Players Game</Link></p>
                 <p><Link to='/ai-mode'>Against Computer</Link></p>
-                <p><a href='/about-me'>About me</a></p>
-                <p><a href='/contact-me'>Contact me</a></p>
+                <p><Link to='/about-me'>About me</Link></p>
+                <p><Link to='/contact-me'>Contact me</Link></p>
                 </div>
               </div>
             )

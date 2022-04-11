@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.098d33de.css",
-    "main.js": "/static/js/main.b3c89d99.js",
+    "main.js": "/static/js/main.bcca39da.js",
     "static/media/TicTAcToe-logo.jpg": "/static/media/TicTAcToe-logo.27b494868edca684b907.jpg",
     "index.html": "/index.html",
     "main.098d33de.css.map": "/static/css/main.098d33de.css.map",
-    "main.b3c89d99.js.map": "/static/js/main.b3c89d99.js.map"
+    "main.bcca39da.js.map": "/static/js/main.bcca39da.js.map"
   },
   "entrypoints": [
     "static/css/main.098d33de.css",
-    "static/js/main.b3c89d99.js"
+    "static/js/main.bcca39da.js"
   ]
 }
